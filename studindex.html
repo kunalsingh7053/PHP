@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+        margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+        }
+        html,body
+        {
+        height:100%;
+        width:100%;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            border: 3px solid white;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 5px;
+        }
+        input{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="student.php" method="post">
+         <h1>Enter Five Subjects Marks</h1>
+         <label for="first">1st sub marks</label>
+         <input type="text" name="marks[]" id="first">
+         <label for="second">2nd sub marks</label>
+         <input type="text" name="marks[]" id="second">
+         <label for="three">3rd sub marks</label>
+         <input type="text" name="marks[]" id="three">
+         <label for="four">4th sub marks</label>
+         <input type="text" name="marks[]" id="four">
+         <label for="five">5th sub marks</label>
+         <input type="text" name="marks[]" id="five">
+         <input type="submit" value="Submit" name="submit">
+    </form>
+</body>
+</html>
