@@ -53,13 +53,6 @@ if (isset($_POST['submit'])) {
         <input type="submit" name="submit" value="Submit">
     </form>
 
-    <?php
-    if (!empty($selectedHobbies)) {
-        echo "<h3>Selected Hobbies:</h3>";
-        foreach ($selectedHobbies as $hobby) {
-            echo $hobby . "<br>";
-        }
-    }
-    ?>
+
 </body>
 </html>
